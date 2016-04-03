@@ -7,4 +7,13 @@ function nextNum($num){
 		return ($num * 3)+1;
 	}
 }
+for ($i=0; $i < 1000000; $i++) { 
+	$counter=0;
+	$checker=$i;
+	while($checker != 1){
+		$checker=nextNum($checker);
+		$counter++;
+	}
+}
+echo $counter;
 ?>
